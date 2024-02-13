@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 -->
 
 
-![Alt text](URL_of_the_image "Optional title")
+![Alt text](banner)
 
