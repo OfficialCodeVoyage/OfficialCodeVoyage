@@ -35,8 +35,6 @@ jobs:
           config_octicon: yes
           config_timezone: America/Chicago
           config_twemoji: yes
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
@@ -55,9 +53,3 @@ jobs:
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_sections: solved
           plugin_leetcode_user: officialcodevoyage
-          plugin_starlists: yes
-          plugin_starlists_languages: yes
-          plugin_starlists_limit: 2
-          plugin_starlists_limit_languages: 8
-          plugin_starlists_limit_repositories: 2
-          plugin_starlists_shuffle_repositories: yes
