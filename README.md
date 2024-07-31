@@ -13,4 +13,4 @@
 
 ![s](https://raw.githubusercontent.com/OfficialCodeVoyage/OfficialCodeVoyage/58c1bb0b4dd66b4f7678ea697b5d766d5255c840/github-contribution-grid-snake-dark.svg)
 
-[<img align="center" width="800" alt="if you see this, it means my metrics are not working" src="https://github.com/officialcodevoyage/officialcodevoyage/blob/main/github-metrics.svg">]
+[<img align="center" width="500" alt="if you see this, it means my metrics are not working" src="https://github.com/officialcodevoyage/officialcodevoyage/blob/main/github-metrics.svg">]
