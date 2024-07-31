@@ -15,31 +15,42 @@
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px;">
     <!-- Left Column: Metrics -->
     <div style="flex: 1; max-width: 45%;">
-        <img align="left" width="100%" alt="if you see this, it means my metrics are not working" src="https://github.com/officialcodevoyage/officialcodevoyage/blob/main/github-metrics.svg">
+        <img align="left" width="45%" alt="if you see this, it means my metrics are not working" src="https://github.com/officialcodevoyage/officialcodevoyage/blob/main/github-metrics.svg">
     </div>
-    
-    <!-- Right Column: Text Information -->
-    <div style="flex: 1; max-width: 45%; text-align: left; margin-left: 20px;">
-        <h3>🚀 Featured Projects</h3>
-        <ul>
-            <li><strong><a href="#">Project Name</a></strong>: Developed a full-stack application using React and Node.js, achieving a 30% increase in user engagement.</li>
-            <li><strong><a href="#">Another Project</a></strong>: Designed and implemented a scalable cloud infrastructure on AWS, reducing operational costs by 20%.</li>
-        </ul>
-        
-        <h3>🌐 Connect with Me</h3>
+
+
+  <div style="flex: 1; max-width: 45%; text-align: left; margin-left: 20px;">
+        <h3>🌐 Let's Connect and Grow Together!</h3>
         <p>
-            <a href="https://www.linkedin.com/in/yourprofile/" target="_blank" style="text-decoration: none;">
+            <a href="https://www.linkedin.com/in/mrbondarenko/" target="_blank" style="text-decoration: none;">
                 <img src="https://img.shields.io/badge/LinkedIn-Connect-blue" alt="LinkedIn">
             </a>
-            <a href="https://twitter.com/yourprofile" target="_blank" style="text-decoration: none;">
-                <img src="https://img.shields.io/badge/Twitter-Follow-blue" alt="Twitter">
+            </a>
+            <a href="https://www.youtube.com/@OfficialCodeVoyage" target="_blank" style="text-decoration: none;">
+                <img src="https://img.shields.io/badge/YouTube-Subscribe-red" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/officialcodevoyage/" target="_blank" style="text-decoration: none;">
+                <img src="https://img.shields.io/badge/Instagram-Follow-pink" alt="Instagram">
             </a>
         </p>
         
-        <h3>✨ Fun Facts</h3>
+  <h3>✨ Fun Facts</h3>
         <ul>
-            <li>I love swimming and Judo.</li>
+            <li>I love Swimming and Judo.</li>
             <li>I’m on a journey to build a big house in Alaska!</li>
+            <li>I enjoy creating content for my YouTube channel, where I share coding tutorials and project walkthroughs.</li>
+            <li>In my free time, I explore the beauty of nature and capture it through my photography on Instagram.</li>
         </ul>
+        
+  <h3>🧑‍💻 About Me</h3>
+        <p>
+            I'm a passionate software developer with a strong background in cloud computing, game development, and full-stack web development. 
+            I have a keen interest in solving complex problems and building scalable solutions. When I'm not coding, you can find me engaged 
+            in physical activities like swimming and judo, or planning my next adventure. 
+        </p>
+        <p>
+            My journey in tech has led me to work with various cutting-edge technologies and collaborate with amazing teams across different 
+            projects. I’m always eager to learn new things and share my knowledge with the community through my YouTube channel.
+        </p>
     </div>
 </div>
