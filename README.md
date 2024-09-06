@@ -38,7 +38,7 @@
         
   <h3>✨ Fun Facts</h3>
         <ul>
-            <li>I love Hackathons, Swimming and Judo.</li>
+            <li>I love Hackathons, Swimming and Tennis.</li>
             <li>I’m on a journey to build a big house in Alaska!</li>
             <li>I enjoy creating content for my YouTube channel, where I share coding tutorials and project walkthroughs.</li>
             <li>In my free time, I explore the beauty of nature and capture it through my photography on Instagram.</li>
