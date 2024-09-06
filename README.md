@@ -25,14 +25,14 @@
         <h3>🌐 Let's Connect and Grow Together!</h3>
         <p>
             <a href="https://www.linkedin.com/in/mrbondarenko/" target="_blank" style="text-decoration: none;">
-                <img src="https://img.shields.io/badge/LinkedIn-Connect-blue" alt="LinkedIn">
+                <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/filled/linkedin.svg" alt="LinkedIn">
             </a>
             </a>
             <a href="https://www.youtube.com/@OfficialCodeVoyage" target="_blank" style="text-decoration: none;">
-                <img src="https://img.shields.io/badge/YouTube-Subscribe-red" alt="YouTube">
+                <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/filled/youtube.svg" alt="YouTube">
             </a>
             <a href="https://www.instagram.com/officialcodevoyage/" target="_blank" style="text-decoration: none;">
-                <img src="https://img.shields.io/badge/Instagram-Follow-pink" alt="Instagram">
+                <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/filled/instagram.svg" alt="Instagram">
             </a>
         </p>
         
