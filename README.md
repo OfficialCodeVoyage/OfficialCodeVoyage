@@ -12,7 +12,8 @@
 </p>
 
 
-![GitHub Snake](https://raw.githubusercontent.com/OfficialCodeVoyage/OfficialCodeVoyage/58c1bb0b4dd66b4f7678ea697b5d766d5255c840/github-contribution-grid-snake-dark.svg)
+![GitHub Snake](https://github.com/OfficialCodeVoyage/OfficialCodeVoyage/blob/6df7b29dd8219f717a53420721b40af395f5e4b0/github-snake-dark.svg)
+
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px;">
     <!-- Left Column: Metrics -->
