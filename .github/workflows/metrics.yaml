@@ -5,10 +5,10 @@ on:
   # Schedule updates (daily at midnight UTC)
   schedule:
     - cron: "0 0 * * *"
-  
+
   # Allow manual triggering of the workflow
   workflow_dispatch:
-  
+
   # Trigger the workflow on pushes to the main branch
   push:
     branches:
@@ -18,18 +18,14 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     environment: production
-    
+
     # Define minimal required permissions for security
     permissions:
       contents: read
       issues: read
       pull-requests: read
       # Add other permissions if required by specific plugins
-      # For example:
-      # packages: read
-      # actions: read
-      # etc.
-    
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -37,33 +33,16 @@ jobs:
           fetch-depth: 1  # Fetch only the latest commit for faster performance
 
       - name: Generate GitHub Metrics
-        uses: lowlighter/metrics@v3  # Specify a stable version instead of 'latest' for reliability
+        uses: lowlighter/metrics@v3.34  # Updated to the correct version
         with:
-          # GitHub Token with appropriate permissions
           token: ${{ secrets.METRICS_TOKEN }}
-
-          # User whose metrics to generate
           user: OfficialCodeVoyage
-
-          # Template style
           template: classic
-
-          # Base sections to include in the metrics
           base: header, activity, community, repositories, metadata
-
-          # Detailed base information
           base_indepth: true
-
-          # Enable Octicons
           config_octicon: true
-
-          # Set timezone
           config_timezone: America/Chicago
-
-          # Enable Twemoji support
           config_twemoji: true
-
-          # Enable language plugins
           plugin_languages: true
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
@@ -77,16 +56,12 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
-
-          # Enable LeetCode plugins
           plugin_leetcode: true
           plugin_leetcode_limit_recent: 2
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_sections: solved
           plugin_leetcode_user: officialcodevoyage
-
         env:
-          # Use GitHub Token with minimal required permissions
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
 
       - name: Commit and Push Metrics
@@ -96,5 +71,4 @@ jobs:
           branch: metrics  # Specify the branch where metrics are stored
           file_pattern: './metrics/**'  # Adjust the path based on where metrics are generated
         env:
-          # Use GitHub Token with permissions to push to the repository
           GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
