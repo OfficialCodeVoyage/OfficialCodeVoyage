@@ -32,8 +32,9 @@ jobs:
         with:
           fetch-depth: 1  # Fetch only the latest commit for faster performance
 
-      - name: Install Docker and JQ
+      - name: Fix Docker installation conflicts
         run: |
+          sudo apt-get remove -y containerd docker.io containerd.io
           sudo apt-get update
           sudo apt-get install -y docker.io jq
 
