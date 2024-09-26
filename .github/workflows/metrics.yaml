@@ -32,6 +32,11 @@ jobs:
         with:
           fetch-depth: 1  # Fetch only the latest commit for faster performance
 
+      - name: Install Docker and JQ
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io jq
+
       - name: Generate GitHub Metrics
         uses: lowlighter/metrics@v3.34  # Updated to the correct version
         with:
