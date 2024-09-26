@@ -12,7 +12,7 @@
 </p>
 
 
-![GitHub Snake](https://github.com/OfficialCodeVoyage/OfficialCodeVoyage/blob/6df7b29dd8219f717a53420721b40af395f5e4b0/github-snake-dark.svg)
+![GitHub Snake](https://github.com/OfficialCodeVoyage/OfficialCodeVoyage/blob/aed6c2289e9a26c5b6185ba3a48d4294b76340db/github-snake-dark.svg)
 
 
 <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-top: 20px;">
