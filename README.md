@@ -34,7 +34,7 @@
             <a href="https://www.youtube.com/@OfficialCodeVoyage" target="_blank" style="text-decoration: none;">
                 <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/filled/youtube.svg" alt="YouTube">
             </a>
-            <a href="https://www.instagram.com/officialcodevoyage/" target="_blank" style="text-decoration: none;">
+            <a href="https://www.instagram.com/pasha____bond/" target="_blank" style="text-decoration: none;">
                 <img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/main/large/filled/instagram.svg" alt="Instagram">
             </a>
         </p>
