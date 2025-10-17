@@ -1,45 +1,31 @@
-# Visit https://github.com/lowlighter/metrics#-documentation for full reference
 name: GitHub Metrics
-
 on:
-  # Schedule updates (daily at midnight UTC)
-  schedule:
-    - cron: "0 0 * * *"
-
-  # Allow manual triggering of the workflow
+  # Manual trigger only
   workflow_dispatch:
-
-  # Trigger the workflow on pushes to the main branch
-  push:
-    branches:
-      - main
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     environment: production
-
-    # Define minimal required permissions for security
     permissions:
-      contents: read
+      contents: write
       issues: read
       pull-requests: read
-      # Add other permissions if required by specific plugins
-
+      
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 1  # Fetch only the latest commit for faster performance
-
+          fetch-depth: 1
+          
       - name: Fix Docker installation conflicts
         run: |
           sudo apt-get remove -y containerd docker.io containerd.io
           sudo apt-get update
           sudo apt-get install -y docker.io jq
-
+          
       - name: Generate GitHub Metrics
-        uses: lowlighter/metrics@v3.34  # Updated to the correct version
+        uses: lowlighter/metrics@v3.34
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: OfficialCodeVoyage
@@ -49,6 +35,8 @@ jobs:
           config_octicon: true
           config_timezone: America/Chicago
           config_twemoji: true
+          
+          # Languages plugin
           plugin_languages: true
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
@@ -62,19 +50,15 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
+          
+          # LeetCode plugin
           plugin_leetcode: true
           plugin_leetcode_limit_recent: 2
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_sections: solved
           plugin_leetcode_user: officialcodevoyage
-        env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
-
-      - name: Commit and Push Metrics
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "📈 Update GitHub metrics [skip ci]"
-          branch: metrics  # Specify the branch where metrics are stored
-          file_pattern: './metrics/**'  # Adjust the path based on where metrics are generated
-        env:
-          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN }}
+          
+          # Auto-commit configuration
+          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_branch: main
+          committer_message: "📈 Update GitHub metrics [skip ci]"
